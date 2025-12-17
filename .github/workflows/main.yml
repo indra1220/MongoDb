@@ -39,7 +39,7 @@ jobs:
 
         # Restart app using PM2
         pm2 stop all || true
-        pm2 start index.js --name student-app
+        pm2 start server.js --name student-app
         pm2 save
 
         EOF
